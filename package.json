@@ -1,0 +1,19 @@
+{
+  "name": "ayres-epecuen",
+  "version": "1.0.0",
+  "description": "Este es un proyecto de cabañas para estadia en Carhue Bs.As",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "javascript"
+  ],
+  "author": "thomas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
