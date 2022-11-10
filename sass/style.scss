@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 @import "header";
+@import "footer";
 
 *{
     box-sizing: border-box;
@@ -7,10 +8,12 @@
     padding: 0;
     font-family: 'Nunito', sans-serif;
 }
-body{
-    background-color: #fff59d;
+.primeraseccion{
+   background:linear-gradient(rgba(0, 0, 0, 0.400),rgba(0, 0, 0, 0.400)), url(../recursos/IMG_20220217_141923.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 90vh;
 }
 
-.contfooter{
-    background-color: red;
-}
+

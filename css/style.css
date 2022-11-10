@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 .header {
+  background-color: #e7dfcd;
   font-size: 17px; }
   .header__logo {
     height: 50px;
     white: auto; }
+
+.footer {
+  background-color: #e7dfcd; }
+  .footer__imgfooter {
+    width: 27px; }
+  .footer__info {
+    padding-left: 8px; }
 
 * {
   box-sizing: border-box;
@@ -11,8 +19,9 @@
   padding: 0;
   font-family: 'Nunito', sans-serif; }
 
-body {
-  background-color: #fff59d; }
-
-.contfooter {
-  background-color: red; }
+.primeraseccion {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../recursos/IMG_20220217_141923.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh; }
