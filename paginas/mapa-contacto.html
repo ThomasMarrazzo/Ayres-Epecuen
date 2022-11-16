@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Mapa & Contacto - Ayres Epecuen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body">
     <header class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -20,13 +23,13 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./galeria.html">Galeria</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./mapa-contacto.html">Mapa & Contacto</a>
+                    <a class="nav-link active" href="./mapa-contacto.html">Mapa & Contacto</a>
                   </li>
                 </ul>
                 <ul class="nav col-md-4 justify-content-end d-flex">
@@ -38,6 +41,82 @@
           </nav>
     </header>
     <main>
+        <section class="seccion">
+            <h1>Mapa & Contacto</h1>
+        </section>
+        <section class="contactomapa">
+            <div class="contacto">
+                <div class="contacto__descripcion">
+                    <h2 class="contacto__titulo">Informes y reservas</h2>
+                    <p class="contacto__frase">Sirvase y contactenos via telefono o email. Con gusto atenderemos cualquier consulta.</p>
+                </div>
+                <div class="contacto__form">
+                  <form class="seccioncontacto__formulario" id="form"method="post">
+                    <div>
+                        <label for="exampleInputEmail1" class="form-label contacto__subtitulo">Nombre</label>
+                        <input type="text" class="form-control contacto__input" name="name" required>
+                    </div>
+                    <div>
+                        <label for="exampleInputEmail1" class="form-label contacto__subtitulo">Apellido</label>
+                        <input type="text" class="form-control contacto__input" name="last" required>
+                    </div>
+                    <div>
+                        <label for="exampleInputEmail1" class="form-label contacto__subtitulo">Telefono</label>
+                        <input type="number" class="form-control contacto__input" name="phone" required>
+                    </div>
+                    <div>
+                        <label for="exampleInputEmail1" class="form-label contacto__subtitulo">Email</label>
+                        <input type="email" class="form-control contacto__input" name="email" required>
+                    </div>                       
+                    <div>
+                        <label for="exampleInputEmail1" class="form-label contacto__subtitulo">Mensaje</label>
+                        <textarea type="email" class="form-control contacto__textarea" name="message" required></textarea>
+                        <input type="submit" id="button" class="contacto__button" value="Enviar Mensaje">
+                    </div>
+                  </form>
+                </div>
+            </div>
+            <div class="mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178.9791479632763!2d-62.75410648174923!3d-37.176966516460425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x42f46b928c46b2ef!2zQ2FiYcOxYXMgY8OpbnRyaWNhcywgQXlyZXMgZGUgRXBlY3XDqW4!5e0!3m2!1ses!2sar!4v1668471414570!5m2!1ses!2sar"
+                height="470" class="mapa__map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <table class=" mapa__table">
+                  <tbody>
+                    <tr>
+                    <hr>
+                        <div class="mapa__aclaracion">
+                            <span>Direccion:</span>
+                            <span>Irigoyen 880</span>
+                        </div>
+                    </tr>
+                    <tr>
+                        <hr>
+                        <div class="mapa__aclaracion">
+                            <span>Ciudad:</span>
+                            <span>Carhue</span>
+                        </div>
+                        <hr>
+                    </tr>
+                    <tr>
+                        <div class="mapa__aclaracion">
+                            <span>Telefono</span>
+                            <span>(02936)403073</span>
+                        </div>
+                    </tr>
+                    <tr>
+                    <hr>
+                        <div class="mapa__aclaracion">
+                          <span>Email:</span>
+                          <span>nestorermantraut@gmail.com</span>
+                        </div>
+                    <hr>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div>
+
+        </section>
 
     
     </main>
@@ -45,11 +124,11 @@
       <div class="container-fluid">
           <div class="row p-5 ">
               <div class="col-xs-12 col-sm-4 col-lg-4">
-                 <p>Ayres Epecuen</p>
+                 <p class="footer__titulos">Ayres Epecuen</p>
                  <p class="">Ayres epecuen es una sjsjflasldksdjjksfkjg, asjndjvjnallksdjkefjksfasf, asdnadjealjglkasd</p>
               </div>
               <div class="col-xs-12 col-sm-4 col-lg-4">
-                 <p>Contactanos</p>
+                 <p class="footer__titulos">Contactanos</p>
                  <div class="mb-3 text-secondary">
                     <ul class="nav justify-content-start d-flex">
                        <li><a class="text-muted" target="blank" href="https://www.facebook.com/profile.php?id=100083143181610"><img src="../recursos/facebook.png" class="header__redes" width="30" height="30"/><use xlink:href="#facebook"></use></a></li>
@@ -70,7 +149,7 @@
                  </div>
               </div>
               <div class="col-xs-12 col-sm-4 col-lg-4 contfooter">
-                 <p>Medios de pago</p>
+                 <p class="footer__titulos">Medios de pago</p>
                  <div class="mb-3 text-secondary">
                      <img class="footer__imgfooter" src="../recursos/icons8-dinero-50.png" />
                      <span class="footer__info">Efectivo</span>

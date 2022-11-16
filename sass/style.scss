@@ -6,14 +6,138 @@
     box-sizing: border-box;
     margin:0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    font-family: 'Source Serif Pro', serif;
+}
+//Arranca Inicio
+.body{
+    background-color:#e7dfcd71;
 }
 .primeraseccion{
-   background:linear-gradient(rgba(0, 0, 0, 0.400),rgba(0, 0, 0, 0.400)), url(../recursos/IMG_20220217_141923.jpg);
+    grid-area: primeraseccion;
+   background:linear-gradient(rgba(0, 0, 0, 0.400),rgba(0, 0, 0, 0.400)), url(../recursos/5.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
    height: 90vh;
 }
 
+.grid-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "primeraseccion primeraseccion"
+                        "segundaseccion segundaseccion"
+                        "terceraseccion terceraseccion";
+}
+.segundaseccion{
+    background-color: #e7dfcd71  ;
+    grid-area: segundaseccion;
+    &__intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    }   
+    &__titulo{
+        font-size: 35px;
+        margin-top: 1.5rem;
+    }
+    &__frase{
+        font-size: 18px;
+    }
+}
+.terceraseccion{
+    grid-area:terceraseccion
+}
 
+//termina inicio
+
+//Empieza Mapa & Contacto
+.seccion{
+    background:linear-gradient(rgba(0, 0, 0, 0.400),rgba(0, 0, 0, 0.400)), url(../recursos/atardecer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & h1{
+        font-size: 60px;
+        font-weight: 400;
+        color: #e7dfcd;
+    }
+}
+.contactomapa{
+    display: flex;
+    margin-bottom: 20px;
+}
+.contacto{
+    width: 50%;
+    &__descripcion{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    &__titulo{
+        font-size: 28px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        width: 40vw;
+    }
+    &__subtitulo{
+        padding-top: 10px;
+        
+    }
+    &__input{
+        &:hover{
+            border-color:  #e7dfcd;
+            box-shadow: 5px 5px 20px  #e7dfcd;
+            transform: translateY(-1%);
+            transition: all 0.6s ease;
+        }
+    }
+    &__textarea{
+        height: 30vh;
+        box-shadow: 2px 2px 20px  #e7dfcd;
+        transform: translateY(-1%);
+        transition: all 0.6s ease; 
+    }
+    &__button{
+        margin-top: 18px;
+        text-decoration: none;
+        background-color: #e7dfcd;
+        border: 1px solid #e7dfcd;
+        border-radius: 4px;
+        padding: 8px;
+        font-size: 15px;
+        font-weight: 500;
+        &:hover{
+            background-color: white;
+            color:black;
+            transition: all 0.6s ease;
+        }
+    }
+}
+.mapa{
+   margin-top: 50px;
+   justify-content: center;
+   flex-direction: column;
+   &__map{
+    border-radius: 10px;
+    width: 700px;
+    margin-bottom: 10px;
+   }
+   &__aclaracion{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
